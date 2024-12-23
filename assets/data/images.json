@@ -1,0 +1,55 @@
+[
+    {
+        "sectionId": "introduction",
+        "articleId": "",
+        "imgSrc": "assets/images/introduction.png",
+        "imageSource": "https://www.space.com/winter-solstice",
+        "imageTitle": "Wikicommons/Angus MacRae"
+    },
+    {
+        "sectionId": "hemispheres",
+        "articleId": "",
+        "imgSrc": "assets/images/hemispheres.png",
+        "imageSource": "https://iastoppers.com/articles/winter-solstice",
+        "imageTitle": "Ref- Al Jazeera"
+    },
+    {
+        "sectionId": "celebrations",
+        "articleId": "newgrange",
+        "imgSrc": "assets/images/newgrange.png",
+        "imageSource": "https://www.irishtimes.com/culture/heritage/winter-solstice-at-newgrange-broadcast-live-around-the-world-1.3332820",
+        "imageTitle": "The Irish Times",
+        "side": "left"
+    },
+    {
+        "sectionId": "celebrations",
+        "articleId": "intiraymi",
+        "imgSrc": "assets/images/intiraymi.png",
+        "imageSource": "https://www.peruhop.com/history-of-inti-raymi/",
+        "imageTitle": "Peru Hop",
+        "side": "right"
+    },
+    {
+        "sectionId": "celebrations",
+        "articleId": "modranicht",
+        "imgSrc": "assets/images/modranicht.png",
+        "imageSource": "https://www.deviantart.com/idrewyouthisdinosaur/art/Happy-Modranicht-everyone-1004189519",
+        "imageTitle": "by IDrewYouThisDinosaur",
+        "side": "left"
+    },
+    {
+        "sectionId": "celebrations",
+        "articleId": "koliada",
+        "imgSrc": "assets/images/koliada.png",
+        "imageSource": "https://en.wikipedia.org/wiki/Koliada",
+        "imageTitle": "by Konstantin Trutovsky",
+        "side": "right"
+    },
+    {
+        "sectionId": "conclusion",
+        "articleId": "",
+        "imgSrc": "assets/images/conclusion.png",
+        "imageSource": "https://lifeadventurously.com/spiritual-meaning-of-winter-solstice",
+        "imageTitle": "Life Adventurously"
+    }
+]
