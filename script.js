@@ -90,14 +90,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Add helper text when hover nav icons
-document.addEventListener("DOMContentLoaded", function() {
-    var listItems = document.querySelectorAll("ul li a");
+// document.addEventListener("DOMContentLoaded", function() {
+//     var listItems = document.querySelectorAll("ul li a");
 
-    listItems.forEach(function(item) {
-        var text = item.textContent;
-        item.setAttribute("data-title", text);
-    });
-});
+//     listItems.forEach(function(item) {
+//         var text = item.textContent;
+//         item.setAttribute("data-title", text);
+//     });
+// });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
@@ -145,6 +145,8 @@ function createImage(sectionId, articleId, imgSrc, imageSource, imageTitle, side
         const aSource = document.createElement('a');
         aSource.textContent = `Image credit: ${imageTitle}`;
         aSource.href = imageSource;
+        aSource.rel = 'noopener noreferrer';
+        aSource.target = '_blank';
         aSource.classList.add('source');
         
         div.appendChild(h2);
@@ -175,6 +177,8 @@ function createImage(sectionId, articleId, imgSrc, imageSource, imageTitle, side
         const aSource = document.createElement('a');
         aSource.textContent = `Image credit: ${imageTitle}`;
         aSource.href = imageSource;
+        aSource.rel = 'noopener noreferrer';
+        aSource.target = '_blank';
         aSource.classList.add('source');
 
         div_txt.appendChild(h3);

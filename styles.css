@@ -129,14 +129,16 @@ a.active-link a span {
     transform: translateY(28px);
 }
 
-ul li a::before {
+/* ul li a::before {
     content: attr(data-title);
     position: absolute;
-    /* bottom: 0px; */
-    /* left: auto; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
+
+    bottom: 0px;
+    left: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     transform: translateX(-90%);
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -144,8 +146,7 @@ ul li a::before {
     border-radius: 5px;
     display: none;
     z-index: 1;
-    /* margin: auto; */
-}
+} */
 
 #main-nav ul li a:hover::before {
   display: block;
@@ -252,6 +253,7 @@ article {
 article div {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 article img {
@@ -269,6 +271,10 @@ article img {
     text-align: center;
     padding: 10px 0;
     visibility: hidden;
+}
+
+#main-footer a[href$="main-header"] {
+    color: rgb(65, 102, 224);
 }
 
 /*======= BREAKPOINTS ======= */
@@ -409,11 +415,11 @@ article img {
     }
 
     section#science {
-        height: 205vh;
+        height: 210vh;
     }
 
     section#hemispheres {
-        height: 305vh;
+        height: 300vh;
     }
 
     section#celebrations {
@@ -421,7 +427,7 @@ article img {
     }
 
     section#traditions {
-        height: 135vh;
+        height: 140vh;
     }
 
     section#conclusion {
