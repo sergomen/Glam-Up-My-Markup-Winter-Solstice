@@ -263,9 +263,9 @@ videos.forEach(video => {
 
 window.addEventListener('scroll', () => {
     if (window.scrollY + window.innerHeight >= document.body.clientHeight) {
-        footer.style.display = 'block';
+        footer.style.visibility = 'visible';
     } else {
-        footer.style.display = 'none';
+        footer.style.visibility = 'hidden';
     }
 });
 
