@@ -422,7 +422,7 @@ article img {
 /* Extra small devices (laptops/desktops, down to 375px) */ 
 @media screen and (max-width: 375px) {
     section iframe {
-        width: 330px;
+        width: 310px;
     }
 
     section {
