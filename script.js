@@ -35,11 +35,23 @@ wrapper.appendChild(footer);
 
 /* Add span elements wrapping texts of the links */
 const listItems = document.querySelectorAll('#main-nav ul li');
-listItems.forEach(item => {
+const linkNames = [
+    {"textContent": "Intro"},
+    {"textContent": "Science"},
+    {"textContent": "Spheres"},
+    {"textContent": "Celebs"},
+    {"textContent": "Tradions"},
+    {"textContent": "Recap"}
+];
+
+listItems.forEach((item, id) => {
     const link = item.querySelector('a');
-    const linkText = link.textContent.trim();
+    // const linkText = link.textContent.trim();
+    const linkText = linkNames[id].textContent;
+
     const span = document.createElement('span');
     span.textContent = linkText;
+
     link.textContent = '';
     link.appendChild(span);
 });

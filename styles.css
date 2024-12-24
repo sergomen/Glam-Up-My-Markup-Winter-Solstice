@@ -8,6 +8,7 @@
     --header-title-color: hsl(214, 59%, 54%);
     --title-color: hsl(231, 24%, 20%);
     --text-color: hsl(231, 4%, 45%);
+    --link-color: hsl(227, 70%, 56%);
     --body-color: hsl(231, 100%, 99%);
     --container-color: #fff;
 
@@ -21,6 +22,8 @@
         --tiny-font-size: .688rem;
     }
 }
+
+/* ======= BASE ======= */
 
 * {
     box-sizing: border-box;
@@ -62,7 +65,8 @@ a:visited {
     color: var(--text-color);
 }
 
-/*======= Navbar =======*/
+/*======= NAVBAR =======*/
+
 #main-nav {
     position: fixed;
     bottom: 2rem;
@@ -102,12 +106,11 @@ li a span {
     font-size: var(--tiny-font-size);
     position: absolute;
     font-weight: 500;
-    /* transform: translateY(50px); */
+    transform: translateY(50px);
     color: var(--body-color);
     z-index: 20;
     transition: .4s;
     opacity: 0;
-    width: 20px;
 }
 
 /* Indicator */
@@ -120,12 +123,12 @@ li a span {
 }
 
 /* Active Link */
- a.active-link i {
+a.active-link i {
     color: var(--body-color);
 }
 
-a.active-link a span {
-    /* opacity: 1; */
+a.active-link span {
+    opacity: 1;
     transform: translateY(28px);
 }
 
@@ -186,6 +189,8 @@ li:nth-child(5):has(a.active-link) ~ svg.indicator {
 li:nth-child(6):has(a.active-link) ~ svg.indicator {
     transform: translateX(calc(57px * 5));
 }
+
+/* ======= SECTION ======= */
 
 section {
     display: flex;
@@ -263,6 +268,8 @@ article img {
     max-height: 100px;
 }
 
+/* ======= FOOTER ======= */
+
 #main-footer {
     display: block;
     position: relative;
@@ -274,7 +281,7 @@ article img {
 }
 
 #main-footer a[href$="main-header"] {
-    color: rgb(65, 102, 224);
+    color: var(--link-color);
 }
 
 /*======= BREAKPOINTS ======= */
@@ -353,7 +360,7 @@ article img {
         max-height: 400px;
     }
  
-     section#conclusion a {
+    section#conclusion a {
          margin-bottom: 20px;
     }
  
@@ -387,15 +394,15 @@ article img {
     }
 
     li:nth-child(1):has(a.active-link) ~ svg.indicator {
-        transform: translateX(calc(14px * 0));
+        transform: translateX(calc(41px * 0));
     }
     
     li:nth-child(2):has(a.active-link) ~ svg.indicator {
-        transform: translateX(calc(40px * 1));
+        transform: translateX(calc(42px * 1));
     }
     
     li:nth-child(3):has(a.active-link) ~ svg.indicator {
-        transform: translateX(calc(40px * 2));
+        transform: translateX(calc(41px * 2));
     }
     
     li:nth-child(4):has(a.active-link) ~ svg.indicator {
