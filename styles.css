@@ -3,7 +3,7 @@
 
 /*======= Variables CSS =======*/
 :root {
-    /*======= Colors =======*/
+    /*======= Colors =======*/            /* Light Theme */
     --first-color: hsl(231, 48%, 95%); /*hsl(231, 48%, 56%);*/
     --header-title-color: hsl(215, 51%, 83%); /*hsl(214, 59%, 54%);*/
     --title-color: hsl(233, 23%, 52%); /*hsl(231, 24%, 20%);*/
@@ -132,21 +132,6 @@ a.active-link span {
     opacity: 1;
     transform: translateY(28px);
 }
-
-/* #main-nav ul li a:hover::before {
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 98%;
-} */
-
-/* ul li a:nth-child(1).active-link ~ .indicator {
-    transform: translateX(calc(56px * 0));
-}
-
-ul li a:nth-child(2).active-link ~ .indicator {
-    transform: translateX(calc(56px * 1));
-} */
 
 li:nth-child(1):has(a.active-link) ~ svg.indicator {
     transform: translateX(calc(56px * 0));
@@ -308,7 +293,7 @@ article img {
     }
 
     section {
-        height: 80vh;
+        height: auto;
     }
 }
 
@@ -373,49 +358,6 @@ article img {
     
     li:nth-child(6):has(a.active-link) ~ svg.indicator {
         transform: translateX(calc(41px * 5));
-    }
-
-    section {
-        height: 90vh; /* <- */
-    }
-
-    section#science {
-        height: 150vh; /* <- */
-    }
-
-    section#hemispheres {
-        height: 195vh; /* <- */
-    }
-
-    section#celebrations {
-        height: 215vh; /* <- */
-    }
-
-    section#traditions {
-        height: 100vh; /* <- */
-    }
-
-    section#conclusion {
-        height: 110vh; /* <- */
-    }
-}
-
-/* Extra small devices (laptops/desktops, down to h844px) */ 
-@media screen and (max-height: 844px) {
-    section#science {
-        height: 160vh; /* <- */
-    }
-
-    section#hemispheres {
-        height: 230vh; /* <- */
-    }
-
-    section#celebrations {
-        height: 242vh; /* <- */
-    }
-
-    section#traditions {
-        height: 110vh; /* <- */
     }
 }
 

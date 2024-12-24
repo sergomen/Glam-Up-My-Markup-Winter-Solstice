@@ -46,7 +46,6 @@ const linkNames = [
 
 listItems.forEach((item, id) => {
     const link = item.querySelector('a');
-    // const linkText = link.textContent.trim();
     const linkText = linkNames[id].textContent;
 
     const span = document.createElement('span');
@@ -279,7 +278,7 @@ var contactLink = document.querySelector('a[href="#contact"]');
 
 if (contactLink) {
     contactLink.textContent = "Made by seriu";
-    // contactLink.href = "https://seriu.vercel.app/";
-    // contactLink.rel = 'noopener noreferrer';
-    // contactLink.target = '_blank';
+    contactLink.href = "https://seriu.vercel.app/";
+    contactLink.rel = 'noopener noreferrer';
+    contactLink.target = '_blank';
 };
