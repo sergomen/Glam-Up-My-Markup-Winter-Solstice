@@ -4,13 +4,13 @@
 /*======= Variables CSS =======*/
 :root {
     /*======= Colors =======*/
-    --first-color: hsl(231, 48%, 56%);
-    --header-title-color: hsl(214, 59%, 54%);
-    --title-color: hsl(231, 24%, 20%);
-    --text-color: hsl(231, 4%, 45%);
-    --link-color: hsl(227, 70%, 56%);
-    --body-color: hsl(231, 100%, 99%);
-    --container-color: #fff;
+    --first-color: hsl(231, 48%, 95%); /*hsl(231, 48%, 56%);*/
+    --header-title-color: hsl(215, 51%, 83%); /*hsl(214, 59%, 54%);*/
+    --title-color: hsl(233, 23%, 52%); /*hsl(231, 24%, 20%);*/
+    --text-color: hsl(225, 12%, 94%); /*hsl(231, 4%, 45%)*/;
+    --link-color: hsl(227, 59%, 72%);
+    --body-color: hsl(223, 78%, 2%); /*hsl(231, 100%, 99%);*/
+    --container-color: hsl(225, 51%, 14%); /* #fff */
 
     /*======= Font =======*/
     --body-font: 'Poppins', sans-serif;
@@ -132,31 +132,12 @@ a.active-link span {
     transform: translateY(28px);
 }
 
-/* ul li a::before {
-    content: attr(data-title);
-    position: absolute;
-
-    bottom: 0px;
-    left: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    transform: translateX(-90%);
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    display: none;
-    z-index: 1;
-} */
-
-#main-nav ul li a:hover::before {
+/* #main-nav ul li a:hover::before {
   display: block;
   position: absolute;
   top: 10px;
   left: 98%;
-}
+} */
 
 /* ul li a:nth-child(1).active-link ~ .indicator {
     transform: translateX(calc(56px * 0));
@@ -317,41 +298,21 @@ article img {
     }
 
     section iframe {
-        width: 460px;
-        height: 220px;
+        width: 550px; /* <- */
+        height: 340px; /* <- */
     }
 
     body {
-        font-size: 14px;
-   }
-}
+        font-size: 20px;
+    }
 
-/* Extra small devices (laptops/desktops, down to 640px) */ 
-@media screen and (max-width: 1024px) {
-    section img {
-         max-height: 250px;
-     }
- 
-     section#introduction img {
-         max-height: 400px;
-     }
- 
-     section#conclusion a {
-         margin-bottom: 20px;
-     }
- 
-     section iframe {
-         width: 460px;
-         height: 220px;
-     }
- 
-     body {
-         font-size: 12px;
+    section {
+        height: 80vh;
     }
 }
 
-/* Extra small devices (laptops/desktops, down to 640px) */ 
-@media screen and (max-width: 375px) {
+/* Extra small devices (laptops/desktops, down to w430px) */ 
+@media screen and (max-width: 430px) {
     section img {
          max-height: 200px;
     }
@@ -365,9 +326,9 @@ article img {
     }
  
     section iframe {
-         width: 330px;
-         height: 220px;
-         margin: 10px auto;
+        width: 350px; /* <- */
+        height: 240px;
+        margin: 10px auto;
     }
 
     article img {
@@ -375,10 +336,6 @@ article img {
         object-fit: cover;
         margin-top: 0;
         max-height: 80px;
-    }
- 
-    body {
-        font-size: 20px;
     }
 
     #main-nav {
@@ -415,6 +372,56 @@ article img {
     
     li:nth-child(6):has(a.active-link) ~ svg.indicator {
         transform: translateX(calc(41px * 5));
+    }
+
+    section {
+        height: 90vh; /* <- */
+    }
+
+    section#science {
+        height: 150vh; /* <- */
+    }
+
+    section#hemispheres {
+        height: 195vh; /* <- */
+    }
+
+    section#celebrations {
+        height: 215vh; /* <- */
+    }
+
+    section#traditions {
+        height: 100vh; /* <- */
+    }
+
+    section#conclusion {
+        height: 110vh; /* <- */
+    }
+}
+
+/* Extra small devices (laptops/desktops, down to h844px) */ 
+@media screen and (max-height: 844px) {
+    section#science {
+        height: 160vh; /* <- */
+    }
+
+    section#hemispheres {
+        height: 230vh; /* <- */
+    }
+
+    section#celebrations {
+        height: 242vh; /* <- */
+    }
+
+    section#traditions {
+        height: 110vh; /* <- */
+    }
+}
+
+/* Extra small devices (laptops/desktops, down to 375px) */ 
+@media screen and (max-width: 375px) {
+    section iframe {
+        width: 330px;
     }
 
     section {

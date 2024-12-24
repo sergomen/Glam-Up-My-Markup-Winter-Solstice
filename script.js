@@ -101,16 +101,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Add helper text when hover nav icons
-// document.addEventListener("DOMContentLoaded", function() {
-//     var listItems = document.querySelectorAll("ul li a");
-
-//     listItems.forEach(function(item) {
-//         var text = item.textContent;
-//         item.setAttribute("data-title", text);
-//     });
-// });
-
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 function scrollActive() {
@@ -289,7 +279,7 @@ var contactLink = document.querySelector('a[href="#contact"]');
 
 if (contactLink) {
     contactLink.textContent = "Made by seriu";
-    contactLink.href = "https://seriu.vercel.app/";
-    contactLink.rel = 'noopener noreferrer';
-    contactLink.target = '_blank';
+    // contactLink.href = "https://seriu.vercel.app/";
+    // contactLink.rel = 'noopener noreferrer';
+    // contactLink.target = '_blank';
 };
